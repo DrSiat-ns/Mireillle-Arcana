@@ -2944,18 +2944,28 @@ body.sanctuary-entering .hero-floating-oracle {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
   margin-bottom: 18px;
-  flex-grow: 1;
 }
 
 .m-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 3px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 4px 11px;
   border-radius: 999px;
   font-size: 0.74rem;
+  line-height: 1.25;
   color: var(--silk-muted);
   letter-spacing: 0.02em;
+  white-space: nowrap;
+  height: fit-content;
+  max-height: 28px;
+  align-self: flex-start;
+  flex-shrink: 0;
 }
 
 .m-chip.highlight {
@@ -2969,6 +2979,7 @@ body.sanctuary-entering .hero-floating-oracle {
   display: flex;
   align-items: baseline;
   gap: 10px;
+  margin-top: auto;
   margin-bottom: 16px;
   padding-top: 12px;
   border-top: 1px solid rgba(245, 238, 227, 0.1);
