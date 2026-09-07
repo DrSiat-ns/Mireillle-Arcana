@@ -1138,9 +1138,12 @@ function initTestimoniesCarousel() {
     if (currentIndex > maxIdx) currentIndex = maxIdx;
 
     const slide = slides[0];
-    if (!slide) return;
-    const slideWidth = slide.getBoundingClientRect().width;
+    const viewport = container.querySelector('#stories-viewport') || container;
+    const visCount = getVisibleCount();
     const gap = 24;
+    const slideWidth = (slide && slide.offsetWidth > 0) 
+      ? slide.offsetWidth 
+      : Math.max(280, (viewport.offsetWidth - (visCount - 1) * gap) / visCount);
     const offset = currentIndex * (slideWidth + gap);
 
     track.style.transform = `translateX(-${offset}px)`;
