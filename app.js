@@ -1134,6 +1134,7 @@ function initTestimoniesCarousel() {
 
   function updateCarousel() {
     const maxIdx = getMaxIndex();
+    const totalSteps = maxIdx + 1;
     if (currentIndex > maxIdx) currentIndex = maxIdx;
 
     const slide = slides[0];
@@ -1145,7 +1146,7 @@ function initTestimoniesCarousel() {
     track.style.transform = `translateX(-${offset}px)`;
 
     if (counter) {
-      counter.textContent = `${String(currentIndex + 1).padStart(2, '0')} / ${String(totalSlides).padStart(2, '0')}`;
+      counter.textContent = `${String(currentIndex + 1).padStart(2, '0')} / ${String(totalSteps).padStart(2, '0')}`;
     }
 
     if (btnPrev) btnPrev.disabled = currentIndex === 0;
