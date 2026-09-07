@@ -454,16 +454,9 @@ function initCurtainUnfold() {
 function initEthicsSwitcher() {
   const buttons = document.querySelectorAll('.ethics-circle-btn');
   const panels = document.querySelectorAll('.ethics-panel-view');
-  const activeNum = document.getElementById('ethics-active-num');
   const card = document.getElementById('ethics-curved-card');
 
   if (!buttons.length || !panels.length) return;
-
-  const numMap = {
-    compassion: '01 / 03',
-    privacy: '02 / 03',
-    sovereignty: '03 / 03'
-  };
 
   buttons.forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -483,11 +476,6 @@ function initEthicsSwitcher() {
         p.classList.toggle('active', isMatch);
         p.setAttribute('aria-hidden', isMatch ? 'false' : 'true');
       });
-
-      // Update active pillar counter
-      if (activeNum && numMap[pillar]) {
-        activeNum.textContent = numMap[pillar];
-      }
 
       // Celestial sparkle burst on the curved showcase card
       if (window.spawnSparkleBurst && card) {
