@@ -51,23 +51,23 @@ function initGalaxyPortal() {
       btnEnter.classList.add('portal-igniting');
       if (window.spawnSparkleBurst) {
         const rect = btnEnter.getBoundingClientRect();
-        window.spawnSparkleBurst(rect.left + rect.width / 2, rect.top + rect.height / 2, 28);
+        window.spawnSparkleBurst(rect.left + rect.width / 2, rect.top + rect.height / 2, 18);
       }
     }
 
-    // 2. Stage 1: Portal Breaching (Shockwave, Hyper-spin, Solar flare)
+    // 2. Stage 1: Portal Breaching (Shockwave, Hyper-spin, Twilight bloom)
     veil.classList.add('portal-breaching');
 
-    // Sigil burst particles as the emblem accelerates
+    // Sigil burst particles as the emblem rotates
     setTimeout(() => {
       const sigil = veil.querySelector('.veil-sigil-img');
       if (sigil && window.spawnSparkleBurst) {
         const sRect = sigil.getBoundingClientRect();
-        window.spawnSparkleBurst(sRect.left + sRect.width / 2, sRect.top + sRect.height / 2, 22);
+        window.spawnSparkleBurst(sRect.left + sRect.width / 2, sRect.top + sRect.height / 2, 14);
       }
-    }, 180);
+    }, 80);
 
-    // 3. Stage 2: Dimensional Breach & Sanctuary Scene Materialization
+    // 3. Stage 2: Swift Dimensional Transition & Sanctuary Scene Emergence
     setTimeout(() => {
       veil.classList.add('portal-open');
       document.body.classList.add('sanctuary-entering');
@@ -76,16 +76,16 @@ function initGalaxyPortal() {
 
       // Wide ambient stardust burst into the Sanctuary
       if (window.spawnSparkleBurst) {
-        window.spawnSparkleBurst(window.innerWidth * 0.32, window.innerHeight * 0.42, 16);
-        window.spawnSparkleBurst(window.innerWidth * 0.68, window.innerHeight * 0.45, 18);
+        window.spawnSparkleBurst(window.innerWidth * 0.35, window.innerHeight * 0.42, 12);
+        window.spawnSparkleBurst(window.innerWidth * 0.65, window.innerHeight * 0.42, 12);
       }
-    }, 420);
+    }, 120);
 
-    // 4. Stage 3: Clean up veil and restore normal state
+    // 4. Stage 3: Clean up veil and restore normal state (snappy 0.55s total)
     setTimeout(() => {
       veil.style.display = 'none';
       document.body.classList.remove('sanctuary-entering');
-    }, 1600);
+    }, 550);
   }
 
   // If visitor already entered during this session, dissolve immediately
