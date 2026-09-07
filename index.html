@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mireille Arcana — A Modern Mystical Sanctuary</title>
+  <meta name="description" content="A modern mystical experience providing personal reflection, emotional guidance, and insight-based tarot readings.">
+
+  <!-- Google Fonts: Forum, Cormorant Garamond, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Forum&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="sanctuary-body">
+
+  <!-- Interactive Celestial Stardust Sparkles Canvas -->
+  <canvas id="celestial-sparkles" class="celestial-sparkles" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================= -->
+  <!-- CINEMATIC GALAXY & CLOUD PORTAL ENTRANCE -->
+  <!-- ========================================================================= -->
+  <div class="galaxy-veil" id="galaxy-veil" aria-label="Entering the Sanctuary">
+    <div class="cosmic-clouds" aria-hidden="true"></div>
+    <div class="cosmic-stardust" aria-hidden="true"></div>
+    <div class="portal-shockwave" id="portal-shockwave" aria-hidden="true"></div>
+    <div class="portal-light-burst" id="portal-light-burst" aria-hidden="true"></div>
+    <div class="veil-content">
+      <!-- Sacred Celestial Sun-Moon Emblem -->
+      <div class="veil-sigil" aria-hidden="true">
+        <img src="assets/celestial-sun-moon.png" alt="Celestial Emblem" class="veil-sigil-img">
+      </div>
+      <h1 class="veil-brand">MIREILLE ARCANA</h1>
+      <button type="button" class="btn-enter-portal" id="btn-enter-portal">
+        <span>Enter the Sanctuary</span>
+        <img src="assets/celestial-starburst.png" alt="Star" class="btn-star-icon" aria-hidden="true">
+      </button>
+    </div>
+  </div>
+
+  <!-- Ambient Celestial Background -->
+  <div class="ambient-stars" aria-hidden="true"></div>
+  <div class="ambient-nebula" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="sanctuary-nav" id="sanctuary-nav">
+    <div class="nav-container">
+      <button type="button" class="brand-logo" data-view="home" aria-label="Mireille Arcana Home">
+        <div class="brand-sigil-wrap">
+          <img src="assets/celestial-sun-moon.png" alt="Mireille Arcana Logo" class="brand-sigil-img">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">MIREILLE</span>
+          <span class="brand-sub">ARCANA</span>
+        </div>
+      </button>
+
+      <!-- Multi-Page View Navigation -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <button type="button" class="nav-tab active" data-view="home">The Sanctuary</button>
+        <button type="button" class="nav-tab" data-view="offerings">Offerings &amp; Spreads</button>
+        <button type="button" class="nav-tab" data-view="stories">Seeker Stories</button>
+        <button type="button" class="nav-tab" data-view="faqs">Wisdom &amp; FAQs</button>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="btn-nav-book" id="btn-open-booking-header">
+          <img src="assets/celestial-starburst.png" alt="" class="nav-btn-star" aria-hidden="true">
+          <span>Book a Reading</span>
+        </button>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN MULTI-VIEW CONTAINER -->
+  <!-- ========================================================================= -->
+  <main class="views-wrapper">
+
+    <!-- --------------------------------------------------------------------- -->
+    <!-- VIEW 1: THE SANCTUARY (HOME / HOOK / DISCOVERY) -->
+    <!-- --------------------------------------------------------------------- -->
+    <!-- --------------------------------------------------------------------- -->
+    <!-- VIEW 1: THE SANCTUARY (MESHY-INSPIRED BENTO SHOWCASE) -->
+    <!-- --------------------------------------------------------------------- -->
+    <section class="sanctuary-view active" id="view-home" aria-label="Sanctuary Home">
+      <div class="view-content-container">
+
+        <!-- HERO BENTO GRID (PUNCHY EDITORIAL + FREE-FLOATING 3D ORACLE CARD) -->
+        <div class="hero-bento-grid">
+          
+          <!-- Left: Punchy Minimalist Editorial Statement -->
+          <div class="hero-bento-left">
+            <div class="bento-badge-live">
+              <span class="live-pulse-dot"></span>
+              <span>Sanctuary Open &bull; 11 Spreads Active</span>
+            </div>
+
+            <h1 class="hero-bento-title">
+              Where Questions Meet the Stars &amp; <br>
+              <span class="gradient-text-meshy">Intuition Awakens</span>
+            </h1>
+
+            <p class="hero-bento-sub">
+              Intuitive tarot and insight-based readings to illuminate your crossroads with clarity and sovereign peace.
+            </p>
+
+            <div class="hero-spark-features">
+              <span>⚡ 12–24h Audio &amp; PDF</span>
+              <span class="spark-sep">✦</span>
+              <span>🔒 100% Confidential</span>
+              <span class="spark-sep">✦</span>
+              <span>🪙 Offerings from ₱10</span>
+            </div>
+
+            <div class="hero-single-action">
+              <button type="button" class="btn-meshy-primary btn-hero-cta" data-navigate="offerings">
+                <span>Explore Sacred Offerings</span>
+                <span class="btn-arrow">&rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Free-Floating 3D Daily Oracle Card (No Enclosing Box) -->
+          <div class="hero-floating-oracle" id="daily-draw-anchor">
+            <!-- Celestial Halo Aura -->
+            <div class="oracle-celestial-halo" aria-hidden="true"></div>
+
+            <div class="oracle-card-box" id="oracle-card-box" role="button" tabindex="0" aria-label="Flip tarot card for daily guidance">
+              <div class="oracle-card" id="oracle-card">
+                <!-- Card Back (Face down first with Sun-Moon Sigil) -->
+                <div class="card-side side-back">
+                  <div class="side-back-border">
+                    <div class="side-back-emblem">
+                      <img src="assets/celestial-sun-moon.png" alt="Arcana Card Back" class="card-back-icon">
+                    </div>
+                    <span class="card-prompt">Tap to Reveal</span>
+                    <span class="prompt-sparkle">✧ ☽ ✧</span>
+                  </div>
+                </div>
+
+                <!-- Card Front (Revealed on flip — Fixed height & generous line padding) -->
+                <div class="card-side side-front" id="oracle-card-front">
+                  <div class="side-front-inner">
+                    <div class="card-front-top">
+                      <span class="card-num" id="card-num">XVII</span>
+                      <div class="card-icon-wrap" id="card-icon-wrap">
+                        <span class="card-glyph" id="card-glyph">⭐</span>
+                      </div>
+                      <h4 class="card-heading" id="card-heading">The Star</h4>
+                      <span class="card-tags" id="card-tags">Hope • Renewal • Serenity</span>
+                    </div>
+                    <div class="card-front-bottom">
+                      <p class="card-oracle-text" id="card-oracle-text">
+                        "A quiet peace follows every storm. Trust that circumstances are gently aligning in your favor."
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Controls: Star + Retry Icon button & Hint -->
+            <div class="oracle-floating-actions">
+              <button type="button" class="btn-redraw-icon" id="btn-re-draw" style="display: none;" aria-label="Draw another daily card" title="Draw another card">
+                <svg class="retry-svg-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-1.19"/>
+                </svg>
+              </button>
+              <span class="oracle-tap-hint" id="oracle-tap-hint">✦ Tap card to reveal daily guidance</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ----------------------------------------------------------------- -->
+        <!-- 1. HOW YOUR READING UNFOLDS (CELESTIAL CURTAIN UNVEIL) -->
+        <!-- ----------------------------------------------------------------- -->
+        <div class="sanctuary-section" id="how-it-unfolds-section">
+          <div class="section-head-center text-center">
+            <p class="bento-eyebrow">✦ THE SACRED PROCESS</p>
+            <h2 class="bento-heading">How Your Reading <strong>Unfolds</strong></h2>
+            <p class="section-subtext">Tarot is a living mirror. Watch the veil part to see how your inquiry journeys from heart to illumination.</p>
+          </div>
+
+          <!-- Interactive Curtain Theatre (Inspired by YesNow Angels & Veils) -->
+          <div class="unfold-theatre" id="unfold-theatre">
+            
+            <!-- Revealed Content Underneath: 3-Step Sacred Pipeline -->
+            <div class="unfold-inner-stage">
+              <div class="pipeline-grid">
+                
+                <div class="pipeline-card">
+                  <div class="pipeline-top">
+                    <span class="pipeline-step-badge">01</span>
+                    <span class="pipeline-chip">🜁 Intention</span>
+                  </div>
+                  <h3 class="pipeline-title">Formulate Inquiry</h3>
+                  <p class="pipeline-desc">Select your spread and state what is on your heart. Open questions spark deep reflection.</p>
+                  <div class="pipeline-tags">
+                    <span>✦ Choose spread</span>
+                    <span>✦ Set focus</span>
+                  </div>
+                </div>
+
+                <div class="pipeline-arrow-divider">
+                  <span class="pipeline-arrow">&rarr;</span>
+                </div>
+
+                <div class="pipeline-card">
+                  <div class="pipeline-top">
+                    <span class="pipeline-step-badge">02</span>
+                    <span class="pipeline-chip">🜂 Channel</span>
+                  </div>
+                  <h3 class="pipeline-title">Intuitive Spread Pull</h3>
+                  <p class="pipeline-desc">Cards cleansed &amp; drawn with grounded focus. Crisp high-res spread photograph captured.</p>
+                  <div class="pipeline-tags">
+                    <span>✦ Meditative pull</span>
+                    <span>✦ High-res photo</span>
+                  </div>
+                </div>
+
+                <div class="pipeline-arrow-divider">
+                  <span class="pipeline-arrow">&rarr;</span>
+                </div>
+
+                <div class="pipeline-card">
+                  <div class="pipeline-top">
+                    <span class="pipeline-step-badge">03</span>
+                    <span class="pipeline-chip">🜃 Guidance</span>
+                  </div>
+                  <h3 class="pipeline-title">Receive Illumination</h3>
+                  <p class="pipeline-desc">Delivered via Instagram DM, Email PDF, or Live. Compassionate and actionable insight.</p>
+                  <div class="pipeline-tags">
+                    <span>✦ 12–24h delivery</span>
+                    <span>✦ Sovereign clarity</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- The Draped Celestial Curtains Overlay (Starts closed, unfolds on click) -->
+            <div class="curtain-overlay" id="curtain-overlay">
+              
+              <!-- Left Curtain Panel (Luxurious Rose Plum Velvet) -->
+              <div class="curtain-panel curtain-left">
+                <div class="curtain-scallop-trim"></div>
+                <div class="curtain-folds-shadow"></div>
+              </div>
+
+              <!-- Center Seam & Trigger Button (Natural velvet seam without gold cord) -->
+              <div class="curtain-center-seam">
+                <button type="button" class="btn-unveil-center" id="btn-unveil-process" aria-label="Unfold the reading process">
+                  <span class="unveil-star">✧</span>
+                  <span class="unveil-label">Unfold</span>
+                  <span class="unveil-star">✧</span>
+                </button>
+              </div>
+
+              <!-- Right Curtain Panel (Luxurious Rose Plum Velvet) -->
+              <div class="curtain-panel curtain-right">
+                <div class="curtain-scallop-trim"></div>
+                <div class="curtain-folds-shadow"></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Re-fold Toggle Button (Revealed after unfolding) -->
+          <div class="unfold-refold-bar text-center">
+            <button type="button" class="btn-refold-veil" id="btn-refold-veil" style="display: none;">
+              <span>✦ Fold Veils Again ✦</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ----------------------------------------------------------------- -->
+        <!-- 2. THE SANCTUARY ETHICS (MODERN ASYMMETRIC SHOWCASE) -->
+        <!-- ----------------------------------------------------------------- -->
+        <div class="sanctuary-section" id="sanctuary-ethics-section">
+          <div class="ethics-modern-grid">
+            
+            <!-- Left Column: Narrative Statement & 3 Circular Icons Row -->
+            <div class="ethics-content-col">
+              <div class="ethics-eyebrow-wrap">
+                <span class="bento-eyebrow">✦ SACRED INTEGRITY &amp; ETHICS</span>
+              </div>
+              <h2 class="ethics-heading">Tarot is a Living Mirror, <br><strong>Not a Cage</strong></h2>
+              <p class="ethics-narrative">
+                We believe true insight never disempowers you with rigid fatalism or fear. Our sanctuary is founded on sacred privacy, compassionate presence, and honoring your sovereign authority at every crossroads.
+              </p>
+
+              <!-- 3 Circular Icons in a Horizontal Row (Inspired by User Reference) -->
+              <div class="ethics-circles-row" role="tablist" aria-label="Sanctuary Ethical Pillars">
+                
+                <!-- Pillar 1: Compassion -->
+                <button type="button" class="ethics-circle-btn" data-pillar="compassion" role="tab" aria-selected="false" aria-controls="ethics-panel-compassion">
+                  <div class="circle-icon-disc">
+                    <span class="circle-emoji">🪞</span>
+                  </div>
+                  <span class="circle-label">Compassion</span>
+                </button>
+
+                <!-- Pillar 2: Privacy (Active by default) -->
+                <button type="button" class="ethics-circle-btn active" data-pillar="privacy" role="tab" aria-selected="true" aria-controls="ethics-panel-privacy">
+                  <div class="circle-icon-disc">
+                    <span class="circle-emoji">🔒</span>
+                  </div>
+                  <span class="circle-label">Privacy</span>
+                </button>
+
+                <!-- Pillar 3: Sovereignty -->
+                <button type="button" class="ethics-circle-btn" data-pillar="sovereignty" role="tab" aria-selected="false" aria-controls="ethics-panel-sovereignty">
+                  <div class="circle-icon-disc">
+                    <span class="circle-emoji">⚖️</span>
+                  </div>
+                  <span class="circle-label">Sovereignty</span>
+                </button>
+
+              </div>
+            </div>
+
+            <!-- Right Column: Signature Modern Asymmetric Curved Card -->
+            <div class="ethics-curved-col">
+              <div class="ethics-curved-card" id="ethics-curved-card">
+                
+                <!-- Ambient Cosmic Nebula Glow -->
+                <div class="curved-card-glow" aria-hidden="true"></div>
+
+                <!-- Watermark Rotating Sun-Moon Sigil -->
+                <div class="curved-card-watermark" aria-hidden="true">
+                  <img src="assets/celestial-sun-moon.png" alt="" class="curved-sigil-spin">
+                </div>
+
+                <!-- Card Header Top Bar -->
+                <div class="curved-card-header">
+                  <span class="curved-active-num" id="ethics-active-num">02 / 03</span>
+                </div>
+
+                <!-- Dynamic Ethics Panels -->
+                <div class="ethics-panels-viewport">
+                  
+                  <!-- Panel 1: Compassionate Space -->
+                  <div class="ethics-panel-view" id="ethics-panel-compassion" role="tabpanel" aria-hidden="true">
+                    <div class="panel-icon-badge">🪞 Heart-Centered Sanctuary</div>
+                    <h3 class="panel-title">Compassionate Space</h3>
+                    <p class="panel-desc">
+                      Every heartbreak, dilemma, and unspoken question is received with complete emotional safety, deep presence, and unconditional acceptance. There is no judgment here—only open warmth.
+                    </p>
+                  </div>
+
+                  <!-- Panel 2: Absolute Privacy (Default Active) -->
+                  <div class="ethics-panel-view active" id="ethics-panel-privacy" role="tabpanel" aria-hidden="false">
+                    <div class="panel-icon-badge">🔒 Sacred Confidence</div>
+                    <h3 class="panel-title">Absolute Privacy</h3>
+                    <p class="panel-desc">
+                      Your identity, questions, voice recordings, and cards are held in impenetrable sacred confidence. We never share, record without consent, or display your personal stories to the public.
+                    </p>
+                  </div>
+
+                  <!-- Panel 3: Free Will Sovereignty -->
+                  <div class="ethics-panel-view" id="ethics-panel-sovereignty" role="tabpanel" aria-hidden="true">
+                    <div class="panel-icon-badge">⚖️ Sovereign Choice</div>
+                    <h3 class="panel-title">Free Will Sovereignty</h3>
+                    <p class="panel-desc">
+                      Tarot reveals currents and perspectives—it never issues fixed sentences or doom prophecies. You hold the sovereign pen to your story and the ultimate power to shape your destiny.
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ----------------------------------------------------------------- -->
+        <!-- 3. FEATURED OFFERINGS (WHAT WE PRACTICE — FLIPPABLE DECK) -->
+        <!-- ----------------------------------------------------------------- -->
+        <div class="sanctuary-section" id="featured-offerings-section">
+          <div class="section-head-split">
+            <div>
+              <p class="bento-eyebrow">✦ WHAT WE PRACTICE</p>
+              <h2 class="bento-heading">Featured <strong>Offerings</strong></h2>
+              <p class="section-subtext">Tap any card to flip and unveil spread details, timeline guidance, and pricing.</p>
+            </div>
+            <div class="practice-head-actions">
+              <button type="button" class="btn-flip-all-cards" id="btn-flip-all-cards">
+                <span>✦ Flip All Cards</span>
+              </button>
+              <button type="button" class="btn-view-all-offerings" data-navigate="offerings">
+                <span>View All 11 Offerings &rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <p class="practice-hint-text text-center">
+            <span class="hint-sparkle">✧</span> Tap any card below to flip &amp; reveal <span class="hint-sparkle">✧</span>
+          </p>
+
+          <!-- 3 Flippable Practice Tarot Cards (Inspired by Photo 3) -->
+          <div class="practice-cards-deck">
+            
+            <!-- Card 1: 3 Card Pull (Berry Plum Accent) -->
+            <div class="practice-card-box" data-card-idx="0" role="button" tabindex="0" aria-label="3 Card Pull: Tap to flip card">
+              <div class="practice-card">
+                
+                <!-- Back Face: Ornate Mystical Tarot Back (Inspired by Photo 3) -->
+                <div class="practice-side practice-back back-plum">
+                  <div class="practice-back-border">
+                    <div class="tarot-celestial-motifs">
+                      <div class="motif-moon-row">☾ &nbsp; ✦ &nbsp; ☽</div>
+                      <div class="tarot-solar-disk">
+                        <div class="solar-face">✦</div>
+                      </div>
+                      <div class="motif-cloud-row">☁ &nbsp; ⚡ &nbsp; ☁</div>
+                    </div>
+                    <span class="practice-back-title">3 Card Pull</span>
+                    <span class="practice-back-tap">✦ Tap to Reveal ✦</span>
+                  </div>
+                </div>
+
+                <!-- Front Face: Spread Details & Booking -->
+                <div class="practice-side practice-front front-plum">
+                  <div class="practice-front-inner">
+                    <div class="f-card-top">
+                      <span class="bento-chip chip-plum">🔥 Most Loved</span>
+                      <img src="assets/celestial-starburst.png" alt="" class="bento-star" aria-hidden="true">
+                    </div>
+                    <h3 class="f-card-title">3 Card Pull</h3>
+                    <p class="f-card-desc">Past root, present pulse, and next empowered trajectory for immediate crossroads clarity.</p>
+                    
+                    <div class="f-card-chips">
+                      <span class="feature-tag">3 Cards</span>
+                      <span class="feature-tag">Timeline Arc</span>
+                      <span class="feature-tag">24h Delivery</span>
+                    </div>
+
+                    <div class="f-card-bottom">
+                      <div class="bento-price-wrap">
+                        <span class="bento-price-amt">₱75</span>
+                        <span class="bento-price-reg">₱100 reg</span>
+                      </div>
+                      <button type="button" class="btn-bento-action btn-action-plum" onclick="openBookingModal('3 Card Pull', 75, 100)">
+                        Book Spread &rarr;
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card 2: Celtic Cross (Solar Gold Accent) -->
+            <div class="practice-card-box" data-card-idx="1" role="button" tabindex="0" aria-label="Celtic Cross: Tap to flip card">
+              <div class="practice-card">
+                
+                <!-- Back Face: Ornate Mystical Tarot Back (Inspired by Photo 3) -->
+                <div class="practice-side practice-back back-gold">
+                  <div class="practice-back-border">
+                    <div class="tarot-celestial-motifs">
+                      <div class="motif-moon-row">☾ &nbsp; ✦ &nbsp; ☽</div>
+                      <div class="tarot-solar-disk">
+                        <div class="solar-face">✦</div>
+                      </div>
+                      <div class="motif-cloud-row">☁ &nbsp; ⚡ &nbsp; ☁</div>
+                    </div>
+                    <span class="practice-back-title">Celtic Cross</span>
+                    <span class="practice-back-tap">✦ Tap to Reveal ✦</span>
+                  </div>
+                </div>
+
+                <!-- Front Face: Spread Details & Booking -->
+                <div class="practice-side practice-front front-gold">
+                  <div class="practice-front-inner">
+                    <div class="f-card-top">
+                      <span class="bento-chip chip-gold">⭐ Save 64%</span>
+                      <img src="assets/celestial-starburst.png" alt="" class="bento-star" aria-hidden="true">
+                    </div>
+                    <h3 class="f-card-title">Celtic Cross (10 Cards)</h3>
+                    <p class="f-card-desc">The legendary cornerstone compass mapping hidden influences and your future trajectory.</p>
+                    
+                    <div class="f-card-chips">
+                      <span class="feature-tag">10 Cards</span>
+                      <span class="feature-tag">Deep Compass</span>
+                      <span class="feature-tag">Audio + PDF</span>
+                    </div>
+
+                    <div class="f-card-bottom">
+                      <div class="bento-price-wrap">
+                        <span class="bento-price-amt">₱200</span>
+                        <span class="bento-price-reg">₱550 reg</span>
+                      </div>
+                      <button type="button" class="btn-bento-action btn-action-gold" onclick="openBookingModal('Celtic Cross (10 cards)', 200, 550)">
+                        Book Spread &rarr;
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card 3: 30-Min Live Session (Seafoam Teal Accent) -->
+            <div class="practice-card-box" data-card-idx="2" role="button" tabindex="0" aria-label="30-Min Live Session: Tap to flip card">
+              <div class="practice-card">
+                
+                <!-- Back Face: Ornate Mystical Tarot Back (Inspired by Photo 3) -->
+                <div class="practice-side practice-back back-teal">
+                  <div class="practice-back-border">
+                    <div class="tarot-celestial-motifs">
+                      <div class="motif-moon-row">☾ &nbsp; ✦ &nbsp; ☽</div>
+                      <div class="tarot-solar-disk">
+                        <div class="solar-face">✦</div>
+                      </div>
+                      <div class="motif-cloud-row">☁ &nbsp; ⚡ &nbsp; ☁</div>
+                    </div>
+                    <span class="practice-back-title">Live 1-on-1</span>
+                    <span class="practice-back-tap">✦ Tap to Reveal ✦</span>
+                  </div>
+                </div>
+
+                <!-- Front Face: Spread Details & Booking -->
+                <div class="practice-side practice-front front-teal">
+                  <div class="practice-front-inner">
+                    <div class="f-card-top">
+                      <span class="bento-chip chip-teal">🟢 Live 1-on-1</span>
+                      <img src="assets/celestial-starburst.png" alt="" class="bento-star" aria-hidden="true">
+                    </div>
+                    <h3 class="f-card-title">30-Min Live Session</h3>
+                    <p class="f-card-desc">Real-time intuitive dialogue via chat or audio. Unlimited questions within your reserved time.</p>
+                    
+                    <div class="f-card-chips">
+                      <span class="feature-tag">Audio or Chat</span>
+                      <span class="feature-tag">Real-Time</span>
+                      <span class="feature-tag">Unlimited Qs</span>
+                    </div>
+
+                    <div class="f-card-bottom">
+                      <div class="bento-price-wrap">
+                        <span class="bento-price-amt">₱400</span>
+                        <span class="bento-price-reg">₱500 reg</span>
+                      </div>
+                      <button type="button" class="btn-bento-action btn-action-teal" onclick="openBookingModal('30-Min Unlimited Questions', 400, 500)">
+                        Reserve Slot &rarr;
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ----------------------------------------------------------------- -->
+        <!-- 4. SEEKER TESTIMONIES (FLOATING ANIMATION) -->
+        <!-- ----------------------------------------------------------------- -->
+        <div class="sanctuary-section" id="sanctuary-testimonies-section">
+          <div class="section-head-center text-center">
+            <p class="bento-eyebrow">✦ SEEKER EXPERIENCES</p>
+            <h2 class="bento-heading">Words from the <strong>Sanctuary</strong></h2>
+            <p class="section-subtext">Real reflections from seekers who found peace and clarity at their crossroads.</p>
+          </div>
+
+          <div class="testimonies-grid">
+            
+            <!-- Testimonial 1 -->
+            <div class="testimony-card floating-card-1">
+              <div class="testimony-stars" aria-label="5 stars">✦ ✦ ✦ ✦ ✦</div>
+              <p class="testimony-text">
+                "Mireille caught nuances about my situation that I hadn’t even voiced to anyone. Her reading was so soothing, grounded, and empowering. I left with absolute peace about my next career move."
+              </p>
+              <div class="testimony-author-row">
+                <div class="testimony-avatar">CR</div>
+                <div class="testimony-meta">
+                  <strong class="testimony-name">Camille R.</strong>
+                  <span class="testimony-service">Celtic Cross Spread &bull; Manila</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 (Featured) -->
+            <div class="testimony-card featured-testimony floating-card-2">
+              <div class="testimony-stars" aria-label="5 stars">✦ ✦ ✦ ✦ ✦</div>
+              <p class="testimony-text">
+                "The 30-minute live session felt like a warm, sacred exhale. She helped me untangle an emotional knot I had carried for months with complete compassion and zero judgment."
+              </p>
+              <div class="testimony-author-row">
+                <div class="testimony-avatar">BM</div>
+                <div class="testimony-meta">
+                  <strong class="testimony-name">Bea M.</strong>
+                  <span class="testimony-service">Live 1-on-1 Consultation &bull; Quezon City</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimony-card floating-card-3">
+              <div class="testimony-stars" aria-label="5 stars">✦ ✦ ✦ ✦ ✦</div>
+              <p class="testimony-text">
+                "The high-res spread photo and audio breakdown arrived so fast. Her interpretation was spot-on and gave me the exact reassurance I needed before making a major life transition."
+              </p>
+              <div class="testimony-author-row">
+                <div class="testimony-avatar">JP</div>
+                <div class="testimony-meta">
+                  <strong class="testimony-name">Jian P.</strong>
+                  <span class="testimony-service">3 Card Clarity Pull &bull; Cebu</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ----------------------------------------------------------------- -->
+        <!-- 5. CLOSING SANCTUARY CTA -->
+        <!-- ----------------------------------------------------------------- -->
+        <div class="sanctuary-section sanctuary-closing-section" id="sanctuary-closing-cta">
+          <div class="closing-cta-card">
+            <div class="closing-cta-halo" aria-hidden="true"></div>
+            <img src="assets/celestial-sun-moon.png" alt="" class="closing-sigil" aria-hidden="true">
+            <p class="bento-eyebrow">✦ BEGIN YOUR SANCTUARY JOURNEY</p>
+            <h2 class="closing-title">Ready to Unveil What the Stars <strong>Hold for You?</strong></h2>
+            <p class="closing-sub">
+              Step into the quiet space. Bring your questions, your crossroads, or simply an open heart. We are honored to hold sacred space for you.
+            </p>
+            <div class="closing-actions">
+              <button type="button" class="btn-meshy-primary btn-closing-primary" onclick="openBookingModal('3 Card Pull', 75, 100)">
+                <span>Book a Sacred Reading</span>
+                <span class="btn-arrow">&rarr;</span>
+              </button>
+              <button type="button" class="btn-meshy-secondary btn-closing-secondary" data-navigate="offerings">
+                <span>Explore All 11 Offerings &rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------- -->
+    <!-- VIEW 2: SACRED OFFERINGS (FULL DEDICATED MENU) -->
+    <!-- --------------------------------------------------------------------- -->
+    <section class="sanctuary-view" id="view-offerings" aria-label="Offerings and Spreads">
+      <div class="view-content-container">
+        
+        <div class="view-header text-center">
+          <p class="mini-eyebrow">The Sacred Menu</p>
+          <h2 class="view-title">Choose Your <strong>Spread</strong></h2>
+          <p class="view-desc">
+            Lovingly prepared readings tailored to where you currently stand on your journey.
+          </p>
+
+          <!-- Interactive Promo vs Regular Toggle -->
+          <div class="pricing-toggle-box">
+            <span class="p-toggle-lbl" id="label-regular">Regular Rates</span>
+            <button type="button" class="p-switch" id="pricing-switch" role="switch" aria-checked="true" aria-label="Toggle promo pricing">
+              <span class="p-ball"></span>
+            </button>
+            <span class="p-toggle-lbl active" id="label-promo">
+              Promo Rates Active <span class="p-star-badge">✨ Special</span>
+            </span>
+          </div>
+
+          <!-- Category Tabs -->
+          <div class="menu-tabs">
+            <button type="button" class="m-tab active" data-cat="all">All (11)</button>
+            <button type="button" class="m-tab" data-cat="clarity">Quick Clarity</button>
+            <button type="button" class="m-tab" data-cat="spreads">Deep Spreads</button>
+            <button type="button" class="m-tab" data-cat="live">Live 1-on-1</button>
+          </div>
+        </div>
+
+        <!-- 11 Services Grid (Meshy Bento Menu with Feature Chips & High Contrast) -->
+        <div class="menu-grid" id="menu-grid">
+
+          <!-- 1. Yes / No Question -->
+          <div class="menu-card" data-cat="clarity">
+            <div class="m-card-header">
+              <span class="m-badge">Direct Clarity</span>
+              <img src="assets/celestial-starburst.png" alt="" class="m-corner-star" aria-hidden="true">
+            </div>
+            <h4 class="m-name">Yes / No Question</h4>
+            <p class="m-desc">Energetic inclination for urgent choices.</p>
+            <div class="m-chips-wrap">
+              <span class="m-chip">⚡ 1 Card</span>
+              <span class="m-chip">Instant Clarity</span>
+              <span class="m-chip">Same Day</span>
+            </div>
+            <div class="m-pricing">
+              <span class="m-amt" data-promo="10" data-reg="25">₱10</span>
+              <span class="m-orig" data-reg="₱25">₱25 reg</span>
+            </div>
+            <button type="button" class="btn-m-select" onclick="openBookingModal('Yes / No Question', 10, 25)">
+              Select Offering &rarr;
+            </button>
+          </div>
+
+          <!-- 2. 1 Card Pull -->
+          <div class="menu-card" data-cat="clarity">
+            <div class="m-card-header">
+              <span class="m-badge">Daily Focus</span>
+              <img src="assets/celestial-starburst.png" alt="" class="m-corner-star" aria-hidden="true">
+            </div>
+            <h4 class="m-name">1 Card Pull</h4>
+            <p class="m-desc">Single archetypal oracle anchor for your day.</p>
+            <div class="m-chips-wrap">
+              <span class="m-chip">1 Card</span>
+              <span class="m-chip">Core Guidance</span>
+              <span class="m-chip">Audio/Photo</span>
+            </div>
+            <div class="m-pricing">
+              <span class="m-amt" data-promo="25" data-reg="50">₱25</span>
+              <span class="m-orig" data-reg="₱50">₱50 reg</span>
+            </div>
+            <button type="button" class="btn-m-select" onclick="openBookingModal('1 Card Pull', 25, 50)">
+              Select Offering &rarr;
+            </button>
+          </div>
+
+          <!-- 3. 3 Card Pull -->
+          <div class="menu-card featured-plum" data-cat="clarity">
+            <div class="m-card-header">
+              <span class="m-badge popular">🔥 Most Loved</span>
+              <img src="assets/celestial-starburst.png" alt="" class="m-corner-star" aria-hidden="true">
+            </div>
+            <h4 class="m-name">3 Card Pull</h4>
+            <p class="m-desc">Past root, present pulse, and empowered trajectory.</p>
+            <div class="m-chips-wrap">
+              <span class="m-chip">3 Cards</span>
+              <span class="m-chip">Timeline Arc</span>
+              <span class="m-chip highlight">Save ₱25</span>
+            </div>
+            <div class="m-pricing">
+              <span class="m-amt" data-promo="75" data-reg="100">₱75</span>
+              <span class="m-orig" data-reg="₱100">₱100 reg</span>
+            </div>
+            <button type="button" class="btn-m-select btn-select-plum" onclick="openBookingModal('3 Card Pull', 75, 100)">
+              Select Offering &rarr;
+            </button>
+          </div>
+
+          <!-- 4. 5 Card Pull -->
+          <div class="menu-card" data-cat="clarity">
+            <div class="m-card-header">
+              <span class="m-badge">Deep Insight</span>
+              <img src="assets/celestial-starburst.png" alt="" class="m-corner-star" aria-hidden="true">
+            </div>
+            <h4 class="m-name">5 Card Pull</h4>
+            <p class="m-desc">Subconscious blockers and actionable next steps.</p>
+            <div class="m-chips-wrap">
+              <span class="m-chip">5 Cards</span>
+              <span class="m-chip">Subconscious</span>
+              <span class="m-chip highlight">Save ₱50</span>
+            </div>
+            <div class="m-pricing">
+              <span class="m-amt" data-promo="100" data-reg="150">₱100</span>
+              <span class="m-orig" data-reg="₱150">₱150 reg</span>
+            </div>
+            <button type="button" class="btn-m-select" onclick="openBookingModal('5 Card Pull', 100, 150)">
+              Select Offering &rarr;
+            </button>
+          </div>
+
+          <!-- 5. General Reading -->
+          <div class="menu-card" data-cat="spreads">
+            <div class="m-card-header">
+              <span class="m-badge">Overview</span>
+              <img src="assets/celestial-starburst.png" alt="" class="m-corner-star" aria-hidden="true">
+            </div>
+            <h4 class="m-name">General Reading</h4>
+            <p class="m-desc">Holistic check-in across emotional and spiritual currents.</p>
+            <div class="m-chips-wrap">
+              <span class="m-chip">Full Layout</span>
+              <span class="m-chip">Mind/Body/Spirit</span>
+              <span class="m-chip highlight">Save ₱50</span>
+            </div>
+            <div class="m-pricing">
+              <span class="m-amt" data-promo="150" data-reg="200">₱150</span>
+              <span class="m-orig" data-reg="₱200">₱200 reg</span>
+            </div>
+            <button type="button" class="btn-m-select" onclick="openBookingModal('General Reading', 150, 200)">
+              Select Offering &rarr;
+            </button>
+          </div>
+
+          <!-- 6. In-depth Reading -->
+          <div class="menu-card featured-gold" data-cat="spreads">
+            <div class="m-card-header">
+              <span class="m-badge gold">Deep Exploration</span>
+              <img src="assets/celestial-starburst.png" alt="" class="m-corner-star" aria-hidden="true">
+            </div>
+            <h4 class="m-name">In-Depth Reading</h4>
+            <p class="m-desc">Multi-layered guidance examining roots and empowered shifts.</p>
+            <div class="m-chips-wrap">
+              <span class="m-chip">Comprehensive</span>
+              <span class="m-chip">Detailed Analysis</span>
+              <span class="m-chip highlight">Save ₱50</span>
+            </div>
+            <div class="m-pricing">
+              <span class="m-amt" data-promo="200" data-reg="250">₱200</span>
+              <span class="m-orig" data-reg="₱250">₱250 reg</span>
+            </div>
+            <button type="button" class="btn-m-select btn-select-gold" onclick="openBookingModal('In-depth Reading', 200, 250)">
+              Select Offering &rarr;
+            </button>
+          </div>
+
+          <!-- 7. Horseshoe (7 cards) -->
+          <div class="menu-card" data-cat="spreads">
+            <div class="m-card-header">
+              <span class="m-badge">7 Cards</span>
+              <img src="assets/celestial-starburst.png" alt="" class="m-corner-star" aria-hidden="true">
+            </div>
+            <h4 class="m-name">Horseshoe Spread</h4>
+            <p class="m-desc">Past, present, obstacles, advice, and final resolution.</p>
+            <div class="m-chips-wrap">
+              <span class="m-chip">7 Cards Arc</span>
+              <span class="m-chip">Overcoming Blocks</span>
+              <span class="m-chip highlight">Save ₱50</span>
+            </div>
+            <div class="m-pricing">
+              <span class="m-amt" data-promo="150" data-reg="200">₱150</span>
+              <span class="m-orig" data-reg="₱200">₱200 reg</span>
+            </div>
+            <button type="button" class="btn-m-select" onclick="openBookingModal('Horseshoe (7 cards)', 150, 200)">
+              Select Offering &rarr;
+            </button>
+          </div>
+
+          <!-- 8. Celtic Cross (10 cards) -->
+          <div class="menu-card featured-gold" data-cat="spreads">
+            <div class="m-card-header">
+              <span class="m-badge gold">⭐ Best Deal &bull; Save ₱350</span>
+              <img src="assets/celestial-starburst.png" alt="" class="m-corner-star" aria-hidden="true">
+            </div>
+            <h4 class="m-name">Celtic Cross Spread</h4>
+            <p class="m-desc">The legendary 10-card life compass and trajectory.</p>
+            <div class="m-chips-wrap">
+              <span class="m-chip">10 Cards</span>
+              <span class="m-chip">Subconscious + Hopes</span>
+              <span class="m-chip highlight">Save 64%</span>
+            </div>
+            <div class="m-pricing">
+              <span class="m-amt" data-promo="200" data-reg="550">₱200</span>
+              <span class="m-orig" data-reg="₱550">₱550 reg</span>
+            </div>
+            <button type="button" class="btn-m-select btn-select-gold" onclick="openBookingModal('Celtic Cross (10 cards)', 200, 550)">
+              Select Offering &rarr;
+            </button>
+          </div>
+
+          <!-- 9. Horoscope (13 cards) -->
+          <div class="menu-card" data-cat="spreads">
+            <div class="m-card-header">
+              <span class="m-badge">Zodiac</span>
+              <img src="assets/celestial-starburst.png" alt="" class="m-corner-star" aria-hidden="true">
+            </div>
+            <h4 class="m-name">Horoscope Spread</h4>
+            <p class="m-desc">12 astrological houses + central soul card forecast.</p>
+            <div class="m-chips-wrap">
+              <span class="m-chip">13 Cards</span>
+              <span class="m-chip">12 Life Houses</span>
+              <span class="m-chip highlight">Save ₱50</span>
+            </div>
+            <div class="m-pricing">
+              <span class="m-amt" data-promo="250" data-reg="300">₱250</span>
+              <span class="m-orig" data-reg="₱300">₱300 reg</span>
+            </div>
+            <button type="button" class="btn-m-select" onclick="openBookingModal('Horoscope (13 cards)', 250, 300)">
+              Select Offering &rarr;
+            </button>
+          </div>
+
+          <!-- 10. 30-Min Unlimited Questions -->
+          <div class="menu-card featured-teal" data-cat="live">
+            <div class="m-card-header">
+              <span class="m-badge live">🟢 Live 1-on-1</span>
+              <img src="assets/celestial-starburst.png" alt="" class="m-corner-star" aria-hidden="true">
+            </div>
+            <h4 class="m-name">30-Min Unlimited Session</h4>
+            <p class="m-desc">Real-time intuitive dialogue with unlimited questions.</p>
+            <div class="m-chips-wrap">
+              <span class="m-chip">Audio or Chat</span>
+              <span class="m-chip">Unlimited Qs</span>
+              <span class="m-chip highlight">Save ₱100</span>
+            </div>
+            <div class="m-pricing">
+              <span class="m-amt" data-promo="400" data-reg="500">₱400</span>
+              <span class="m-orig" data-reg="₱500">₱500 reg</span>
+            </div>
+            <button type="button" class="btn-m-select btn-select-teal" onclick="openBookingModal('30-Min Unlimited Questions', 400, 500)">
+              Reserve Live Slot &rarr;
+            </button>
+          </div>
+
+          <!-- 11. 1-Hour Unlimited Questions -->
+          <div class="menu-card featured-teal" data-cat="live">
+            <div class="m-card-header">
+              <span class="m-badge live">🟢 Full Immersion</span>
+              <img src="assets/celestial-starburst.png" alt="" class="m-corner-star" aria-hidden="true">
+            </div>
+            <h4 class="m-name">1-Hour Unlimited Session</h4>
+            <p class="m-desc">60-minute sacred space for deep, exhaustive life inquiry.</p>
+            <div class="m-chips-wrap">
+              <span class="m-chip">60 Minutes</span>
+              <span class="m-chip">Unlimited Qs</span>
+              <span class="m-chip highlight">Save ₱200</span>
+            </div>
+            <div class="m-pricing">
+              <span class="m-amt" data-promo="800" data-reg="1000">₱800</span>
+              <span class="m-orig" data-reg="₱1,000">₱1,000 reg</span>
+            </div>
+            <button type="button" class="btn-m-select btn-select-teal" onclick="openBookingModal('1-Hour Unlimited Questions', 800, 1000)">
+              Reserve Full Sanctuary &rarr;
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Add-on notice with Starburst Icon -->
+        <div class="addon-banner">
+          <img src="assets/celestial-starburst.png" alt="" class="addon-star" aria-hidden="true">
+          <span>Additional Questions can be added to any reading for <strong>₱10 each</strong> (Promo) / ₱25 regular.</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------- -->
+    <!-- VIEW 3: SEEKER STORIES & TESTIMONIES (CAROUSEL SHOWCASE) -->
+    <!-- --------------------------------------------------------------------- -->
+    <section class="sanctuary-view" id="view-stories" aria-label="Seeker Stories and Testimonies">
+      <div class="view-content-container">
+        
+        <div class="view-header text-center">
+          <p class="mini-eyebrow">✦ WORDS FROM THE SANCTUARY</p>
+          <h2 class="view-title">Seeker <strong>Stories</strong></h2>
+          <p class="view-desc">Honest reflections and illuminated crossroads from seekers who stepped through the veil.</p>
+        </div>
+
+        <!-- Seeker Testimonies Carousel Showcase -->
+        <div class="stories-carousel-wrapper" id="stories-carousel-showcase">
+          
+          <!-- Carousel Header Controls Row -->
+          <div class="carousel-control-row">
+            <div class="carousel-counter-badge">
+              <span class="badge-dot">✦</span>
+              <span class="carousel-counter-label" id="stories-carousel-counter">01 / 06</span>
+            </div>
+            <div class="carousel-nav-arrows">
+              <button type="button" class="carousel-arrow-btn btn-stories-prev" aria-label="Previous Testimonial">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button type="button" class="carousel-arrow-btn btn-stories-next" aria-label="Next Testimonial">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Carousel Viewport & Track -->
+          <div class="carousel-viewport" id="stories-viewport">
+            <div class="carousel-track" id="stories-track">
+              
+              <!-- Slide 1: Camille R. -->
+              <div class="carousel-slide">
+                <div class="testimony-card floating-card-1">
+                  <div class="testimony-stars" aria-label="5 stars">✦ ✦ ✦ ✦ ✦</div>
+                  <p class="testimony-text">
+                    "Mireille caught nuances about my situation that I hadn’t even voiced to anyone. Her reading was so soothing, grounded, and empowering. I left with absolute peace about my next career move."
+                  </p>
+                  <div class="testimony-author-row">
+                    <div class="testimony-avatar">CR</div>
+                    <div class="testimony-meta">
+                      <strong class="testimony-name">Camille R.</strong>
+                      <span class="testimony-service">Celtic Cross Spread &bull; Manila</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Bea M. (Featured) -->
+              <div class="carousel-slide">
+                <div class="testimony-card featured-testimony floating-card-2">
+                  <div class="testimony-stars" aria-label="5 stars">✦ ✦ ✦ ✦ ✦</div>
+                  <p class="testimony-text">
+                    "The 30-minute live session felt like a warm, sacred exhale. She helped me untangle an emotional knot I had carried for months with complete compassion and zero judgment."
+                  </p>
+                  <div class="testimony-author-row">
+                    <div class="testimony-avatar">BM</div>
+                    <div class="testimony-meta">
+                      <strong class="testimony-name">Bea M.</strong>
+                      <span class="testimony-service">Live 1-on-1 Consultation &bull; Quezon City</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Jian P. -->
+              <div class="carousel-slide">
+                <div class="testimony-card floating-card-3">
+                  <div class="testimony-stars" aria-label="5 stars">✦ ✦ ✦ ✦ ✦</div>
+                  <p class="testimony-text">
+                    "The high-res spread photo and audio breakdown arrived so fast. Her interpretation was spot-on and gave me the exact reassurance I needed before making a major life transition."
+                  </p>
+                  <div class="testimony-author-row">
+                    <div class="testimony-avatar">JP</div>
+                    <div class="testimony-meta">
+                      <strong class="testimony-name">Jian P.</strong>
+                      <span class="testimony-service">3 Card Clarity Pull &bull; Cebu</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4: Sofia D. -->
+              <div class="carousel-slide">
+                <div class="testimony-card floating-card-1">
+                  <div class="testimony-stars" aria-label="5 stars">✦ ✦ ✦ ✦ ✦</div>
+                  <p class="testimony-text">
+                    "Her Year Ahead forecast was astonishingly accurate. Each quarter unfolded with uncanny clarity, giving me calm anchors when navigating unexpected relationship and business decisions."
+                  </p>
+                  <div class="testimony-author-row">
+                    <div class="testimony-avatar">SD</div>
+                    <div class="testimony-meta">
+                      <strong class="testimony-name">Sofia D.</strong>
+                      <span class="testimony-service">Year Ahead Astrological Tarot &bull; Makati</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 5: Marco T. (Featured) -->
+              <div class="carousel-slide">
+                <div class="testimony-card featured-testimony floating-card-2">
+                  <div class="testimony-stars" aria-label="5 stars">✦ ✦ ✦ ✦ ✦</div>
+                  <p class="testimony-text">
+                    "I was skeptical about tarot through audio notes, but Mireille’s warmth and precision blew me away. She didn't predict rigid doom; she gave me back my sovereign agency."
+                  </p>
+                  <div class="testimony-author-row">
+                    <div class="testimony-avatar">MT</div>
+                    <div class="testimony-meta">
+                      <strong class="testimony-name">Marco T.</strong>
+                      <span class="testimony-service">Love &amp; Crossroads Horizon &bull; Davao</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 6: Elena V. -->
+              <div class="carousel-slide">
+                <div class="testimony-card floating-card-3">
+                  <div class="testimony-stars" aria-label="5 stars">✦ ✦ ✦ ✦ ✦</div>
+                  <p class="testimony-text">
+                    "A truly transcendent session. The clarity she channeled around my recurring emotional cycles felt like lifting a heavy veil. I recommend her to anyone feeling spiritually stuck."
+                  </p>
+                  <div class="testimony-author-row">
+                    <div class="testimony-avatar">EV</div>
+                    <div class="testimony-meta">
+                      <strong class="testimony-name">Elena V.</strong>
+                      <span class="testimony-service">Past Life &amp; Soul Karma &bull; Baguio</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Dot Indicators -->
+          <div class="carousel-dots-wrap" id="stories-dots"></div>
+
+          <!-- Trust Credential Badges -->
+          <div class="stories-trust-row">
+            <div class="stories-trust-badge">
+              <span class="trust-badge-icon">✦</span>
+              <span>1,200+ Sacred Readings Delivered</span>
+            </div>
+            <div class="stories-trust-badge">
+              <span class="trust-badge-icon">★</span>
+              <span>4.99 / 5 Seeker Peace Rating</span>
+            </div>
+            <div class="stories-trust-badge">
+              <span class="trust-badge-icon">🔒</span>
+              <span>100% Sacred &amp; Sovereign Confidence</span>
+            </div>
+          </div>
+
+          <!-- Direct Action CTA -->
+          <div class="stories-cta-box text-center">
+            <p class="stories-cta-sub">Ready to illuminate your own crossroads?</p>
+            <button type="button" class="btn-meshy-primary" id="btn-open-booking-stories" onclick="openBookingModal('Celtic Cross Spread', 350, 450)">
+              <span>Book Your Sacred Reading</span>
+              <span class="btn-arrow">&rarr;</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------- -->
+    <!-- VIEW 4: WISDOM & FAQS (2-COLUMN BENTO SPLIT) -->
+    <!-- --------------------------------------------------------------------- -->
+    <section class="sanctuary-view" id="view-faqs" aria-label="Frequently Asked Questions">
+      <div class="view-content-container">
+        
+        <div class="view-header text-center">
+          <p class="mini-eyebrow">Wisdom &amp; Preparation</p>
+          <h2 class="view-title">Frequently Asked <strong>Questions</strong></h2>
+          <p class="view-desc">Answers to common questions about preparing your questions and how readings work.</p>
+        </div>
+
+        <!-- 2-Column Bento: Contact Tile Left + 4 Punchy Accordions Right -->
+        <div class="faq-bento-layout">
+          
+          <!-- Left: Quick Contact & Advice Tile -->
+          <div class="faq-contact-card">
+            <div class="faq-contact-sigil-wrap">
+              <img src="assets/celestial-sun-moon.png" alt="" class="faq-contact-sigil" aria-hidden="true">
+            </div>
+            <span class="faq-contact-badge">✦ Direct Connection</span>
+            <h3 class="faq-contact-title">Unsure Which Spread Fits?</h3>
+            <p class="faq-contact-desc">
+              Tell Mireille what crossroads you are facing and she will recommend the most illuminating spread.
+            </p>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-faq-contact">
+              <span>Message on Instagram</span>
+              <span class="btn-arrow">&rarr;</span>
+            </a>
+            <div class="faq-contact-foot">
+              <span class="faq-speed-dot"></span>
+              <span>Typical reply within 1–2 hours</span>
+            </div>
+          </div>
+
+          <!-- Right: 4 Punchy Accordion Cards -->
+          <div class="faq-accordion" id="faq-accordion">
+            
+            <div class="faq-card">
+              <button type="button" class="faq-btn" aria-expanded="false">
+                <span>Is tarot fortune-telling or set in stone?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-body">
+                <p>
+                  <strong>No. The future is never fixed.</strong> Tarot maps your current momentum, underlying patterns, and blind spots. It reveals likely trajectories—your sovereign free will always decides the outcome.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-card">
+              <button type="button" class="faq-btn" aria-expanded="false">
+                <span>What kinds of questions can I ask?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-body">
+                <p>
+                  Open-ended questions about self-reflection, love, career crossroads, and emotional clarity work best. We do not read on medical diagnoses, legal matters, or non-involved third parties.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-card">
+              <button type="button" class="faq-btn" aria-expanded="false">
+                <span>How will I receive my reading?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-body">
+                <p>
+                  Within <strong>12–24 hours</strong> via Instagram DM (photo + written breakdown) or Email PDF. Live 1-on-1 sessions are conducted in real time via audio or chat at your booked slot.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-card">
+              <button type="button" class="faq-btn" aria-expanded="false">
+                <span>How should I prepare before a reading?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-body">
+                <p>
+                  Pause in a quiet space, take three deep breaths, and focus on your genuine crossroads. No prior tarot knowledge needed—simply bring an open, honest heart.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="sanctuary-footer">
+    <div class="footer-inner">
+      <div class="f-brand">
+        <div class="f-brand-header">
+          <img src="assets/celestial-sun-moon.png" alt="" class="f-brand-emblem" aria-hidden="true">
+          <span class="f-logo">MIREILLE ARCANA</span>
+        </div>
+        <p class="f-tagline">A modern mystical sanctuary for personal reflection and intuitive clarity.</p>
+      </div>
+      <div class="f-nav">
+        <button type="button" data-view="home">The Sanctuary</button>
+        <button type="button" data-view="offerings">Offerings</button>
+        <button type="button" data-view="stories">Seeker Stories</button>
+        <button type="button" data-view="faqs">Wisdom &amp; FAQs</button>
+      </div>
+      <div class="f-contact">
+        <p>Inquiries &amp; Community:</p>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">@mireillearcana</a>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Mireille Arcana. All rights reserved. Grounded Intuition &amp; Sacred Guidance.</p>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- "ENTER THE SANCTUARY" INTERACTIVE BOOKING DRAWER / MODAL -->
+  <!-- (Payment details placed exclusively here at checkout) -->
+  <!-- ========================================================================= -->
+  <div class="modal-backdrop" id="booking-modal" aria-hidden="true">
+    <div class="modal-sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+      <button type="button" class="btn-sheet-close" id="btn-sheet-close" aria-label="Close booking">&times;</button>
+
+      <div class="sheet-header text-center">
+        <div class="sheet-emblem-wrap">
+          <img src="assets/celestial-sun-moon.png" alt="" class="sheet-emblem-img" aria-hidden="true">
+        </div>
+        <h3 class="sheet-title" id="sheet-title">Enter the Sanctuary</h3>
+        <p class="sheet-sub">Coordinate your sacred reading with Mireille.</p>
+      </div>
+
+      <!-- Form View -->
+      <form id="booking-form" class="sheet-form">
+        <!-- Offering Selection -->
+        <div class="form-field">
+          <label for="book-service" class="field-label">Selected Spread</label>
+          <select id="book-service" class="field-select" required>
+            <optgroup label="Quick Clarity &amp; Pulls">
+              <option value="Yes / No Question" data-promo="10" data-reg="25">Yes / No Question (Promo: ₱10 / Reg: ₱25)</option>
+              <option value="1 Card Pull" data-promo="25" data-reg="50">1 Card Pull (Promo: ₱25 / Reg: ₱50)</option>
+              <option value="3 Card Pull" data-promo="75" data-reg="100">3 Card Pull (Promo: ₱75 / Reg: ₱100)</option>
+              <option value="5 Card Pull" data-promo="100" data-reg="150">5 Card Pull (Promo: ₱100 / Reg: ₱150)</option>
+            </optgroup>
+            <optgroup label="Deep Spreads">
+              <option value="General Reading" data-promo="150" data-reg="200" selected>General Reading (Promo: ₱150 / Reg: ₱200)</option>
+              <option value="In-depth Reading" data-promo="200" data-reg="250">In-depth Reading (Promo: ₱200 / Reg: ₱250)</option>
+              <option value="Horseshoe (7 cards)" data-promo="150" data-reg="200">Horseshoe (7 cards) (Promo: ₱150 / Reg: ₱200)</option>
+              <option value="Celtic Cross (10 cards)" data-promo="200" data-reg="550">Celtic Cross (10 cards) (Promo: ₱200 / Reg: ₱550)</option>
+              <option value="Horoscope (13 cards)" data-promo="250" data-reg="300">Horoscope (13 cards) (Promo: ₱250 / Reg: ₱300)</option>
+            </optgroup>
+            <optgroup label="Live 1-on-1 Sessions">
+              <option value="30-Min Unlimited Questions" data-promo="400" data-reg="500">30-Min Unlimited Questions (Promo: ₱400 / Reg: ₱500)</option>
+              <option value="1-Hour Unlimited Questions" data-promo="800" data-reg="1000">1-Hour Unlimited Questions (Promo: ₱800 / Reg: ₱1,000)</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- Additional questions stepper -->
+        <div class="form-field">
+          <label class="field-label">Additional Questions (+₱10 promo / +₱25 reg each)</label>
+          <div class="stepper">
+            <button type="button" class="stepper-btn" id="btn-sub-q">-</button>
+            <input type="number" id="extra-q-input" class="stepper-num" value="0" min="0" max="10" readonly>
+            <button type="button" class="stepper-btn" id="btn-add-q">+</button>
+          </div>
+        </div>
+
+        <!-- Price Tally Box -->
+        <div class="tally-card">
+          <div class="tally-main">
+            <span>Total Energy Exchange:</span>
+            <span class="tally-price" id="tally-price">₱150</span>
+          </div>
+          <span class="tally-status" id="tally-status">✨ Special Promo Rate Applied</span>
+        </div>
+
+        <!-- Client Info -->
+        <div class="field-grid">
+          <div class="form-field">
+            <label for="client-name" class="field-label">Your Name *</label>
+            <input type="text" id="client-name" class="field-input" placeholder="Name or alias" required>
+          </div>
+          <div class="form-field">
+            <label for="client-contact" class="field-label">Instagram Handle or Email *</label>
+            <input type="text" id="client-contact" class="field-input" placeholder="@handle or email" required>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="client-delivery" class="field-label">Preferred Delivery Format</label>
+          <select id="client-delivery" class="field-select">
+            <option value="Instagram DM (Photo + Written Analysis)">Instagram DM (Photo + Written Analysis)</option>
+            <option value="Email (PDF &amp; High-Res Spread)">Email (PDF &amp; High-Res Spread)</option>
+            <option value="Telegram (Audio Note + Photos)">Telegram (Audio Note + Photos)</option>
+            <option value="Live Audio / Chat Session">Live 1-on-1 Session (for 30m / 1h)</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="client-notes" class="field-label">Your Question or Intention (Optional)</label>
+          <textarea id="client-notes" class="field-textarea" rows="2" placeholder="Briefly describe what you'd like clarity on, or leave blank for a general reading..."></textarea>
+        </div>
+
+        <!-- Payment Options (Discreetly at Checkout) -->
+        <div class="form-field">
+          <label class="field-label">Payment Preference (Philippines E-Wallets &amp; Banks)</label>
+          <div class="pay-chips">
+            <label class="pay-chip active">
+              <input type="radio" name="pay_option" value="GCash" checked>
+              <span>GCash</span>
+            </label>
+            <label class="pay-chip">
+              <input type="radio" name="pay_option" value="Maya">
+              <span>Maya</span>
+            </label>
+            <label class="pay-chip">
+              <input type="radio" name="pay_option" value="Bank Transfer">
+              <span>Bank Transfer</span>
+            </label>
+          </div>
+
+          <div class="pay-details" id="pay-details">
+            <div class="pay-row">
+              <span class="pay-lbl">Account:</span>
+              <span class="pay-val">Mireille Arcana</span>
+            </div>
+            <div class="pay-row">
+              <span class="pay-lbl" id="pay-number-lbl">GCash Mobile:</span>
+              <span class="pay-val highlight" id="pay-number-val">0917-888-ARCANA</span>
+              <button type="button" class="btn-copy-sm" id="btn-copy-acc">Copy</button>
+            </div>
+            <p class="pay-hint">After generating, send your screenshot of payment via DM/Email to confirm your schedule.</p>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-sheet-submit">
+          <span>Generate Booking Summary</span>
+          <img src="assets/celestial-starburst.png" alt="" class="btn-star-micro" aria-hidden="true">
+        </button>
+      </form>
+
+      <!-- Confirmation Screen -->
+      <div class="sheet-confirmation" id="sheet-confirmation" style="display: none;">
+        <img src="assets/celestial-sun-moon.png" alt="" class="conf-sigil-img" aria-hidden="true">
+        <h4 class="conf-title">Your Booking is Prepared!</h4>
+        <p class="conf-msg">Thank you, <strong id="conf-name">Seeker</strong>. Your request details are summarized below.</p>
+
+        <div class="conf-summary">
+          <div class="c-row"><span>Spread:</span><strong id="conf-service">General Reading</strong></div>
+          <div class="c-row"><span>Exchange:</span><strong id="conf-total" class="gold">₱150</strong></div>
+          <div class="c-row"><span>Payment:</span><span id="conf-method">GCash</span></div>
+          <div class="c-row"><span>Delivery:</span><span id="conf-del">Instagram DM</span></div>
+        </div>
+
+        <div class="conf-buttons">
+          <button type="button" class="btn-copy-dm" id="btn-copy-dm">
+            📋 Copy Details to Send via DM
+          </button>
+          <button type="button" class="btn-close-sheet" id="btn-close-sheet">
+            Return to Sanctuary
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
